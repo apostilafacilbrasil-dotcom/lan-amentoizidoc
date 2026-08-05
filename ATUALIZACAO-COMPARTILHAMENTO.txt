@@ -1,0 +1,8 @@
+IZIDOC — compartilhamento social
+
+Incluído:
+- preview-izidoc.jpg (1200x630)
+- metatags Open Graph e Twitter Cards
+- CNAME para izidocdigital.com.br
+
+Após atualizar o GitHub Pages, teste o link em uma conversa nova. Se o WhatsApp mantiver o cache antigo, teste temporariamente: https://izidocdigital.com.br/?v=4
