@@ -1,0 +1,19 @@
+IZIDOC — Efeito oficial com paleta da marca
+
+Projeto completo:
+- data de lançamento: 14/09/2026 às 08h;
+- cronômetro automático;
+- layout minimalista responsivo;
+- rodapé institucional;
+- imagens oficiais integradas.
+
+Efeito:
+- mesmos parâmetros, física, deformação, interpolação, nós e ondas do componente oficial;
+- apenas a paleta foi alterada para rosa e branco da IZIDOC;
+- linhas e nós mantêm a intensidade e o comportamento originais.
+
+Teste:
+1. Extraia o ZIP.
+2. Abra index.html.
+3. Movimente o cursor.
+4. Clique para disparar uma onda.
