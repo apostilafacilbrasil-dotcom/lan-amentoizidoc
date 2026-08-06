@@ -438,3 +438,261 @@ color:#bdbdbd;
 footer b{color:#ff0a8a;font-weight:700}
 footer .dot{color:#ff0a8a;padding:0 .6rem}
 @media(max-width:768px){footer{font-size:12px;line-height:1.8}}
+
+/* =========================================================
+   MOBILE REFINADO — preserva o desktop
+   ========================================================= */
+@media (max-width: 560px) {
+  html, body {
+    min-width: 0;
+  }
+
+  .page {
+    background: rgba(255,255,255,.72);
+  }
+
+  .hero {
+    width: 100%;
+    padding: 28px 14px 30px;
+  }
+
+  h1 {
+    max-width: 360px;
+    margin-inline: auto;
+    font-size: clamp(34px, 10.2vw, 42px);
+    line-height: 1.04;
+    letter-spacing: -.042em;
+    text-wrap: balance;
+  }
+
+  .izi-dark {
+    height: .86em;
+    margin-left: .02em;
+    vertical-align: -.06em;
+  }
+
+  .lead {
+    max-width: 340px;
+    margin: 18px auto 28px;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: -.015em;
+    text-wrap: balance;
+  }
+
+  .izi-small {
+    height: .82em;
+    margin-inline: .02em;
+  }
+
+  .launch-card {
+    width: 100%;
+    gap: 0;
+    padding: 22px 18px 18px;
+    border-radius: 20px;
+    box-shadow: 0 20px 46px rgba(0,0,0,.22);
+  }
+
+  .launch-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+    align-items: end;
+    padding: 0 0 20px;
+  }
+
+  .launch-info .section-label {
+    grid-column: 1 / -1;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+
+  .date-block,
+  .time-block {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .date-block strong,
+  .time-block strong {
+    font-size: clamp(34px, 10vw, 42px);
+  }
+
+  .time-block span {
+    margin-top: 5px;
+    font-size: 9px;
+    line-height: 1.25;
+  }
+
+  .calendar-icon,
+  .clock-icon {
+    width: 31px;
+    height: 31px;
+    border-width: 2px;
+  }
+
+  .calendar-icon {
+    background: radial-gradient(circle,var(--pink) 1.25px,transparent 2px) 6px 12px/8px 8px;
+  }
+
+  .calendar-icon::before,
+  .calendar-icon::after {
+    top: -5px;
+    width: 3px;
+    height: 8px;
+  }
+
+  .clock-icon::before {
+    height: 9px;
+  }
+
+  .clock-icon::after {
+    height: 7px;
+  }
+
+  .pink-rule {
+    display: none;
+  }
+
+  .countdown-side {
+    padding-top: 18px;
+  }
+
+  .countdown-side > .section-label {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+
+  .countdown {
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 14px;
+    background: rgba(255,255,255,.018);
+  }
+
+  .countdown div {
+    padding: 15px 8px 13px;
+    border: 0;
+  }
+
+  .countdown div:nth-of-type(odd) {
+    border-right: 1px solid #39393d;
+  }
+
+  .countdown div:nth-of-type(-n+2) {
+    border-bottom: 1px solid #39393d;
+  }
+
+  .countdown strong {
+    font-size: clamp(36px, 11vw, 46px);
+  }
+
+  .countdown span {
+    margin-top: 6px;
+    font-size: 10px;
+    letter-spacing: .06em;
+  }
+
+  .cta {
+    min-height: 56px;
+    margin-top: 16px;
+    padding-inline: 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .benefits {
+    width: 100%;
+    margin-top: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .benefits article {
+    min-height: 112px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    padding: 15px 10px;
+    border: 1px solid rgba(255,0,140,.14) !important;
+    border-radius: 14px;
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 8px 22px rgba(0,0,0,.06);
+    text-align: center;
+  }
+
+  .benefit-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 19px;
+  }
+
+  .benefits strong {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  footer {
+    min-height: auto;
+    padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  footer > span {
+    max-width: 330px;
+  }
+
+  footer .dot {
+    display: inline-block;
+    padding: 0 .35rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    padding-inline: 10px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .launch-card {
+    padding-inline: 14px;
+  }
+
+  .date-block,
+  .time-block {
+    gap: 7px;
+  }
+
+  .date-block strong,
+  .time-block strong {
+    font-size: 33px;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits article {
+    min-height: 92px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+    padding-inline: 18px;
+  }
+}
